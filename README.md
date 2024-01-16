@@ -23,7 +23,7 @@
 - [Question 11](#question-11)
 - [Question 12](#question-12)
 
-
+- [Insights from Data Analysis](#insights-from-data-analysis)
 
 ### Project Overview
 
@@ -181,7 +181,7 @@ WITH pre_membership_order AS
 		        ON pmo.product_id = m.product_id
 		        AND pmo.rank_num =1;
 ```
-### What is the total items and amount spent for each member before they became a member?
+### Question 8 What is the total items and amount spent by each member before they became a member?
 #### _Ans: Customer A bought a total of 25 items while customer B bought a total of 40 items_
 
 ```sql
@@ -290,3 +290,9 @@ WITH total_spent_and_quantity AS
 
 ```
 ![Question 12 pic](https://github.com/Okonkwosolomon1/Customer_Behaviour_Analysis/assets/155292549/d345eb6d-3b7f-4f6d-8f97-928cefbdce0d)
+
+### Insights from Data Analysis
+The most frequent visitor is Customer B. Customer B made 6 visits in January 2021. However, customer A and B earned the most loyalty points
+Danny’s Diner’s most popular item is ramen, followed by curry and sushi.
+Customer A loves ramen, Customer C loves only ramen whereas Customer B seems to enjoy sushi, curry and ramen equally.
+The last item ordered by Customers A and B before they became members are sushi and curry. Does it mean both of these items are the deciding factor?
