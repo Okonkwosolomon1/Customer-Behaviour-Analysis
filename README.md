@@ -14,6 +14,14 @@
 - [Question 2](#question-2)
 - [Question 3](#question-3)
 - [Question 4](#question-4)
+- [Question 5](#question-5)
+- [Question 6](#question-6)
+- [Question 7](#question-7)
+- [Question 8](#question-8)
+- [Question 9](#question-9)
+- [Question 10](#question-10)
+- [Question 11](#question-11)
+- [Question 12](#question-12)
 
 
 
@@ -62,6 +70,7 @@ Bonus Task 2: Rank all things! (That is, Rank all the products putting NULL rank
 ### Data Analysis
 
 ### Question 1: What is the total amount each customer spent at the restaurant?
+#### _Ans: Customers A,B and C spent $76, $74 and $36 respectively_
 
 ```sql
 SELECT s.customer_id, SUM(m.price) AS total_spent
@@ -70,4 +79,12 @@ JOIN menu m
 ON s.product_id = m.product_id
 GROUP BY 1;
 ```
-####
+### Question 2 How many days has each customer visited the restaurant?
+#### _Ans: Customers A, B and C visited for 4, 6 and 2 days respectively_
+
+```sql
+SELECT customer_id, COUNT(DISTINCT order_date) AS num_of_visit_days
+ FROM sales
+ GROUP BY 1;
+```
+
