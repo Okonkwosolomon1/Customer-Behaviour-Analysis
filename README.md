@@ -292,7 +292,12 @@ WITH total_spent_and_quantity AS
 ![Question 12 pic](https://github.com/Okonkwosolomon1/Customer_Behaviour_Analysis/assets/155292549/d345eb6d-3b7f-4f6d-8f97-928cefbdce0d)
 
 ### Insights from Data Analysis
-The most frequent visitor is Customer B. Customer B made 6 visits in January 2021. However, customer A and B earned the most loyalty points
-Danny’s Diner’s most popular item is ramen, followed by curry and sushi.
-Customer A loves ramen, Customer C loves only ramen whereas Customer B seems to enjoy sushi, curry and ramen equally.
-The last item ordered by Customers A and B before they became members are sushi and curry. Does it mean both of these items are the deciding factor?
+The most popular items at Danny's Diner is ramen,curry and sushi in that order.
+The most frequent visitor is Customer B.
+Customers A and B are the most loyal customers. They earned the most loyalty points
+The favourite items for the Customers are: Ramen for Customer A and C while customer B loves all the items equally.
+
+### Recommendations
+Danny should incentivise with Customer C to patronise the Diner more
+There is an opprtunity for more sakles if Customers A and B could be made to love other items as much as they love ramen
+
