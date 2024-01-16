@@ -91,18 +91,19 @@ SELECT customer_id, COUNT(DISTINCT order_date) AS num_of_visit_days
 #### _Ans: The first items they purchased were sushi and curry for customer A, curry for customer B and ramen for customer C_
 
 ```sql
-WITH customer_first_purchase AS (
-      SELECT s.customer_id, MIN(s.order_date) AS first_purchase
-	  FROM sales s
-	  GROUP BY s.customer_id
-      )
-      SELECT cfp. customer_id, cfp.first_purchase,m. product_name
-      FROM customer_first_purchase cfp
-      JOIN sales s
-      ON cfp. customer_id = s. customer_id
-      AND cfp. first_purchase = s.order_date
-      JOIN menu m 
-      ON m.product_id = s. product_id;
+WITH customer_first_purchase AS
+			(
+				SELECT s.customer_id, MIN(s.order_date) AS first_purchase
+				FROM sales s
+				GROUP BY s.customer_id
+	      		)
+		      SELECT cfp. customer_id, cfp.first_purchase,m. product_name
+		      FROM customer_first_purchase cfp
+		      JOIN sales s
+		      ON cfp. customer_id = s. customer_id
+		      AND cfp. first_purchase = s.order_date
+		      JOIN menu m 
+		      ON m.product_id = s. product_id;
 ```
 ### Question 4 What is the most purchased item on the menu and how many times was it purchased by all customers?
 #### _Ans: Ramen was the most purchased item. Customer A bought it 3 times, B 2 times and customer C, 3 times as well_
@@ -110,15 +111,32 @@ WITH customer_first_purchase AS (
 ```sql
 WITH most_purchashed_item AS 
 		(
-		SELECT product_id, COUNT(product_id) AS num_of_items_purchased
-		FROM sales s 
-		GROUP BY 1
-		ORDER BY 2 DESC
-        )
-			SELECT mp. product_id, m. product_name, mp. num_of_items_purchased
-            FROM most_purchashed_item mp
-            JOIN menu m
-            ON mp.product_id = m. product_id;
+			SELECT product_id, COUNT(product_id) AS num_of_items_purchased
+			FROM sales s 
+			GROUP BY 1
+			ORDER BY 2 DESC
+        	)
+		SELECT mp. product_id, m. product_name, mp. num_of_items_purchased
+		FROM most_purchashed_item mp
+		JOIN menu m
+		ON mp.product_id = m. product_id;
+```
+### Question 5 Which item was the most popular for each customer?
+#### Ans : For Customers A and C it is ramen but Customer B liked all 3 items equally
+
+```sql
+WITH ranked_purchase AS
+			(
+				SELECT s.customer_id, s.product_id, m.product_name, COUNT(s.product_id) AS purchase_count,
+				DENSE_RANK() OVER (PARTITION BY s.customer_id ORDER BY COUNT(s.product_id)DESC) AS purchase_rank 
+				FROM sales s
+				JOIN menu m 
+				ON s.product_id = m.product_id
+				GROUP BY 1,2,3
+                	)
+			SELECT rp. customer_id, rp.product_id, rp.product_name, rp.purchase_count
+            		FROM ranked_purchase rp
+           		WHERE purchase_rank = 1;
 
 ```
 
