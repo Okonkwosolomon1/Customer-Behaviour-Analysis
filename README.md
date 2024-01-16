@@ -300,7 +300,7 @@ Customers A and B are the most loyal customers. They earned the most loyalty poi
 The favourite items for the Customers are: Ramen for Customer A and C while customer B loves all the items equally.
 
 ### Recommendations
-Danny should incentivise with Customer C to patronise the Diner more
+Danny should incentivise Customer C to patronise the Diner more
 There is an opprtunity for more sakles if Customers A and B could be made to love other items as much as they love ramen
 
 ### *END* 
