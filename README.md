@@ -25,6 +25,8 @@
 
 - [Insights from Data Analysis](#insights-from-data-analysis)
 
+- [Recommendations](#recommendations)
+
 ### Project Overview
 
 This Project is case study number one of an 8 week SQL challenge posed by Danny Ma as can be found in this [link:](https://8weeksqlchallenge.com/case-study-1/) It aims at helping Danny's Diner Management to understand their customers better in terms of the spending patterns, trends and associated factors. Furthermore, the analysis of the data is hoped to provide insights into what the each customer seems to like or don't like. This will help Diner's Management to improve the Business
@@ -301,3 +303,5 @@ The favourite items for the Customers are: Ramen for Customer A and C while cust
 Danny should incentivise with Customer C to patronise the Diner more
 There is an opprtunity for more sakles if Customers A and B could be made to love other items as much as they love ramen
 
+### *END* 
+😄
