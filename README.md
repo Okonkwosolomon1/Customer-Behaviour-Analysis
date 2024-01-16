@@ -289,3 +289,4 @@ WITH total_spent_and_quantity AS
 	       ORDER BY prt.customer_id, prt.order_date;
 
 ```
+![Question 12 pic](https://github.com/Okonkwosolomon1/Customer_Behaviour_Analysis/assets/155292549/d345eb6d-3b7f-4f6d-8f97-928cefbdce0d)
