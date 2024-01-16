@@ -182,7 +182,7 @@ WITH pre_membership_order AS
 		        AND pmo.rank_num =1;
 ```
 ### Question 8 What is the total items and amount spent by each member before they became a member?
-#### _Ans: Customer A bought a total of 25 items while customer B bought a total of 40 items_
+#### _Ans: Customer A bought 2 items spending a total of $25 while customer B bought 3 items and spent a total of $40
 
 ```sql
 WITH total_spent_and_quantity AS
