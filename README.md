@@ -41,6 +41,9 @@ The insights from the data analysis will help him decide whether he should expan
 ### Data Source, Dataset and Entity Relationship Diagram
 Danny provided a sample of his overall customer data due to privacy issues - but he hopes that these examples are enough to write fully functioning SQL queries to help him answer his questions! The data are called: sales, menu and members. He also provided the Data loading syntax and the Entity Relationship Diagram for the Data. They can all be found in the link provided previously
 
+![ERD](https://github.com/Okonkwosolomon1/Customer_Behaviour_Analysis/assets/155292549/fbbbb290-42e7-484f-a124-f48c0e210d98)
+
+
 ### Skills Deployed
 
 Window Functions
