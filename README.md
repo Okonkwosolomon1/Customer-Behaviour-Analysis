@@ -29,7 +29,7 @@
 
 ### Project Overview
 
-This Project is case study number one of an 8 week SQL challenge posed by Danny Ma as can be found in this [link:](https://8weeksqlchallenge.com/case-study-1/) It aims at helping Danny's Diner Management to understand their customers better in terms of the spending patterns, trends and associated factors. Furthermore, the analysis of the data is hoped to provide insights into what the each customer seems to like or don't like. This will help Diner's Management to improve the Business
+This Project is case study number one of an 8 week SQL challenge posed by Danny Ma as can be found in this [link:](https://8weeksqlchallenge.com/case-study-1/) It aims at helping Danny's Diner Management to understand their customers better in terms of the spending patterns, trends and associated factors. Furthermore, the analysis of the data is hoped to provide insights into what each customer seems to like or don't like. This will help Diner's Management to improve the Business
 
 ### Project  Motivation
 
