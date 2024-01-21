@@ -48,13 +48,12 @@ Danny provided a sample of his overall customer data due to privacy issues - but
 
 ### Skills Deployed
 
-Window Functions
-Database Creation from raw data
-Aggregations
-JOINs
-Common Table Expressions (CTE)
-Subquery
-Script writing
+- Window Functions
+- Aggregations
+- JOINs
+- Common Table Expressions (CTE)
+- Subquery
+- Script writing
 
 ### Case Study Questions
 1. What is the total amount each customer spent at the restaurant?
